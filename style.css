@@ -56,8 +56,8 @@ html {
 body {
     overflow-x: hidden;
     background-color: #000000; /* fallback for old browsers */
-    background-image: -webkit-linear-gradient(135deg, black 0%, #16213e 100%);
-    background-image: linear-gradient(135deg, black 0%, #16213e 100%);
+    background-image: -webkit-linear-gradient(135deg, black 0%, black 0% 100%);
+    background-image: linear-gradient(135deg, black 0%, black 0% 100%);
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
     color: #ffffff;
@@ -85,7 +85,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 215, 0, 0.2);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -159,7 +159,7 @@ body {
     top: 60px;
     left: 0;
     right: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0 0;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
   }
@@ -265,7 +265,7 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 3px;
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 1.4s ease-out;
@@ -309,7 +309,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 215, 0, 0.2);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -378,7 +378,7 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 3px;
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -455,7 +455,7 @@ footer p {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 215, 0, 0.2);
-  border-radius: 100px;
+  border-radius: 5px;
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -470,7 +470,7 @@ footer p {
 .intro-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 /* Tablets */
@@ -479,7 +479,7 @@ footer p {
     padding: 40px;
     flex-direction: column;
     text-align: center;
-    border-radius: 60px;
+    border-radius: 5px;
   }
 
   .intro-text {
@@ -534,7 +534,7 @@ footer p {
 .contact-form textarea {
   padding: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   font-size: 1rem;
@@ -554,7 +554,7 @@ footer p {
   padding: 15px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 3px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

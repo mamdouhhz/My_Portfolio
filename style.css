@@ -5,6 +5,22 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Samurai Blast';
+  src: url('TarrgetHalfToneItalic-ozyV.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('DragonHunter-9Ynxj.otf') format('truetype');
+}
+
+h3 {
+  font-family: 'Samurai Blast', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -85,7 +101,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 215, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -94,6 +110,7 @@ body {
     transition: all 0.3s ease;
     width: 90%;
     max-width: 800px;
+    font-family: 'Samurai Blast', sans-serif;
 }
 
 .nav-toggle {
@@ -345,6 +362,7 @@ body {
     font-size: 1rem;
     color: #e0e0e0;
     line-height: 1.6;
+    font-family: 'Roboto';
 }
 
 .resume-section.active .resume-content {
@@ -381,7 +399,8 @@ body {
     border-radius: 3px;
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    font-family: 'Samurai Blast', sans-serif;
+  }
 
 .download-cv:hover {
     transform: translateY(-5px);

@@ -605,3 +605,9 @@ footer p {
     z-index: 9999;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}

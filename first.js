@@ -59,3 +59,12 @@ document.querySelectorAll('.hover-sound').forEach(el => {
 //   clickSound.currentTime = 0;
 //   clickSound.play();
 // });
+
+ window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });

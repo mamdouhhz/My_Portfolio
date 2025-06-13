@@ -41,3 +41,21 @@ document.querySelectorAll('.resume-section h3').forEach(header => {
 document.getElementById('navToggle').addEventListener('click', function () {
 document.getElementById('navLinks').classList.toggle('active');
 });
+
+// Load the audio files
+const hoverSound = new Audio('166186__drminky__menu-screen-mouse-over.wav');
+// const clickSound = new Audio('assets/sounds/click.mp3');
+
+// Play hover sound on elements with 'hover-sound' class
+document.querySelectorAll('.hover-sound').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    hoverSound.currentTime = 0;
+    hoverSound.play();
+  });
+});
+
+// Play click sound on all clickable elements
+// document.addEventListener('click', () => {
+//   clickSound.currentTime = 0;
+//   clickSound.play();
+// });

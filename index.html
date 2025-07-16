@@ -6,113 +6,124 @@
   <title>Mamdouh Hazem's Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=123">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div id="particles-js"></div>
+<div id="particles-js"></div>
 
-  <nav class="nav navbar">
-    <div class="nav-toggle" id="navToggle">&#9776;</div>
-    <div class="nav-links" id="navLinks">
-      <a href="#home" class="hover-sound">Home</a>
-      <a href="#projects" class="hover-sound">Projects</a>
-      <a href="#skills" class="hover-sound">Skills</a>
-      <a href="#work" class="hover-sound">Work Experience</a>
-      <a href="#contact" class="hover-sound">Contact Me</a>
+<nav class="nav navbar">
+  <div class="nav-toggle" id="navToggle">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="hover-sound">Home</a>
+    <a href="#projects" class="hover-sound">Projects</a>
+    <a href="#skills" class="hover-sound">Skills</a>
+    <a href="#work" class="hover-sound">Work Experience</a>
+    <a href="#contact" class="hover-sound">Contact Me</a>
+  </div>
+</nav>
+
+<br>
+<br>
+<section class="hero" id="home">
+  <h1 style="font-family: 'Samurai Blast', sans-serif;">Mamdouh Hazem Akram</h1>
+  <p class="hide-mobile" style="font-family: 'Samurai Blast', sans-serif;">Jr. Software Engineer</p>
+  <p style="font-family: 'Roboto';">Meet Me</p>
+  <a href="#intro" class="scroll-down hover-sound">
+    <i class="fas fa-arrow-down"></i>
+  </a>
+</section>
+
+<section id="intro" class="creative-intro">
+  <div class="intro-left">
+    <div class="info-card">
+      <h2>About Me</h2>
+      <p style="font-family: 'Roboto';">
+        I'm Mamdouh Hazem, a fresh Computer Science graduate from AAST with honors. I'm specialized in backend engineering (Golang, PostgreSQL, GORM), API development, and DevOps. My passion includes ML and data science, having built "Dentify-X," an AI-powered x-ray diagnostic system using YOLOv8.
+      </p>
     </div>
-  </nav>
-
-  <br>
-  <section class="hero" id="home">
-    <h1 style="font-family: 'Samurai Blast', sans-serif;">Mamdouh Hazem Akram</h1>
-    <p class="hide-mobile" style="font-family: 'Samurai Blast', sans-serif;">Jr. Software Engineer</p>
-    <p style="font-family: 'Roboto';">Meet Me</p>
-    <a href="#intro" class="scroll-down hover-sound">
-      <i class="fas fa-arrow-down"></i>
-    </a>
-  </section>
-
-
-  <section>
-    <div id="intro">
-      <div class="intro-image">
-        <img src="me.png" alt="Mamdouh Hazem" width="400">
-      </div>
-      <div class="intro-text">
-        <p style="font-family: 'Roboto';">
-          I'm Mamdouh Hazem, a fresh Computer Science graduate from the Arab Academy for Science, Technology, and Maritime Transport (AAST), an excellent academic record with honors. I specialize in backend software engineering, with hands-on experience using Golang (Gin framework), PostgreSQL, and GORM. My work spans robust backend systems, API development, and DevOps workflows. I’m also passionate about machine learning and data science, having built “Dentify-X,” an AI-powered dental diagnosis tool that leverages YOLOv8 for x-ray analysis. My toolkit includes modern languages and tools like Java, Python, Docker, and Postman, as well as strong foundations in data structures, algorithms, and OOP. I'm a fast learner, organized, and thrive in agile environments—ready to contribute to innovative engineering teams.
-        </p>
-      </div>
+    <br>
+    <div class="info-card">
+      <h2>Education</h2>
+      <p style="font-family: 'Roboto';"><strong>The Arab Academy for Science, Technology and Maritime Transport (AAST)</strong><br>
+        Bachelor of Computer Science in Software Engineering and Information Systems<br>
+        Cairo, Egypt | July 2024<br>
+        Grade: Excellent with honours, Fresh Graduate</p>
     </div>
-  </section>
+  </div>
+  <div id="skills" class="intro-right" style="font-family: 'Roboto';">
+    <h2 class="skills-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Go (Golang, gin)</div>
+      <div class="skill">PostgreSQL / GORM</div>
+      <div class="skill">Java, Python, C++</div>
+      <div class="skill">Docker / DevOps</div>
+      <div class="skill">RESTful APIs</div>
+      <div class="skill">HTML / CSS / JS</div>
+      <div class="skill">Postman, Git, Linux</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">OOP / Algorithms</div>
+    </div>
+  </div>
+</section>
 
-
-  <section class="resume" id="resume">
-    <div class="resume-container">
-      <div class="resume-section active">
-        <h3 class="hover-sound">Education</h3>
-        <div class="resume-content">
-          <p><strong>The Arab Academy for Science, Technology and Maritime Transport (AAST)</strong><br>
-          Bachelor of Computer Science in Software Engineering and Information Systems<br>
-          Cairo, Egypt | July 2024<br>
-          Grade: Excellent with honours, Fresh Graduate</p>
+<section class="resume" id="resume">
+  <div class="resume-container">
+    <section class="projects-section" id="projects">
+      <h3 class="hover-sound">Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <i class="fas fa-tooth project-icon"></i>
+          <h4 style="font-family: 'Roboto';">Dentify-X (Graduation Project, A+)</h4>
+          <p>AI-powered dental diagnosis tool for x-ray images. Built a web app with portals for Dentists, Patients, and Admins using YOLOv8, Golang (gin), GORM, PostgreSQL, Postman, Go Testify, Junit, and OpenSSL. Included EDA, data cleaning, visualizations, and ML regression models.</p>
+        </div>
+        <div class="project-card">
+          <i class="fas fa-clinic-medical project-icon"></i>
+          <h4 style="font-family: 'Roboto';">Clinic Management System</h4>
+          <p>Designed UML diagrams based on stakeholder requirements gathered through physical meetings, ensuring a robust system design.</p>
+        </div>
+        <div class="project-card">
+          <i class="fas fa-prescription-bottle project-icon"></i>
+          <h4 style="font-family: 'Roboto';">Pharmacy System</h4>
+          <p>Developed a comprehensive pharmacy management system using Oracle SQL Server for efficient data handling.</p>
+        </div>
+        <div class="project-card">
+          <i class="fas fa-school project-icon"></i>
+          <h4 style="font-family: 'Roboto';">Courses Registration System</h4>
+          <p>Built with Java, adhering to OOP and SOLID principles for a scalable and maintainable registration platform.</p>
+        </div>
+        <div class="project-card">
+          <i class="fas fa-dumbbell project-icon"></i>
+          <h4 style="font-family: 'Roboto';">Gym Website</h4>
+          <p>Created a dynamic website using HTML, CSS, JavaScript, and PHP to provide an engaging user experience.</p>
         </div>
       </div>
+    </section>
 
-      <div class="resume-section active" id="skills">
-        <h3 class="hover-sound">Skills</h3>
-        <div class="resume-content">
-          <ul>
-            <li>Programming: Go (Golang, gin), JAVA, C, C++, PHP, Python, R, RESTful APIs</li>
-            <li>Web: HTML, CSS, Bootstrap, WordPress CMS</li>
-            <li>Databases: SQL, PostgreSQL, Gorm, MySQL</li>
-            <li>Tools: Postman, Junit, OWASP ZAP, GIT, GitHub, Linux, Docker</li>
-            <li>Concepts: Data Structures, Algorithms, Problem Solving, Machine Learning, OOP</li>
-            <li>Methodologies: Agile Software Development, Trello</li>
-            <li>Soft Skills: Teamwork, Fast Learner, Well-Organized</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="resume-section active" id="projects">
-        <h3 class="hover-sound">Projects</h3>
-        <div class="resume-content">
-          <ul>
-            <li><strong>Dentify-X (Graduation Project, A+)</strong>: AI Dental Tool for diagnosing x-ray images. Web-App with portals for Dentists, Patients, and Admins. Used YOLOV8 model, Golang (gin), Gorm, PostgreSQL, Postman, Go Testify, Junit, OpenSSL. Included EDA, data cleaning, visualizations, and ML regression models.</li>
-            <li><strong>Clinic Management System</strong>: Designed UML diagrams based on stakeholder requirements gathered through physical meetings.</li>
-            <li><strong>Pharmacy System</strong>: Developed using Oracle SQL Server.</li>
-            <li><strong>Courses Registration System</strong>: Built with JAVA, adhering to OOP and SOLID principles.</li>
-            <li><strong>Gym Website</strong>: Created using HTML, CSS, JavaScript, PHP.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="resume-section active" id="work">
-        <h3 class="hover-sound">Professional Experience</h3>
-        <div class="resume-content">
-          <ul>
-            <li><strong>Surge Technologies, Software Engineer (Part-Time)</strong><br>
+    <div class="resume-section active" id="work">
+      <h3 class="hover-sound">Professional Experience</h3>
+      <div class="resume-content">
+        <ul>
+          <li><strong>Surge Technologies, Software Engineer (Part-Time)</strong><br>
             Cairo, Egypt | 10/2024 - Present<br>
             Odoo ERP Development, DevOps.</li>
-            <li><strong>IOTBLUE, Backend Software Engineer (Intern)</strong><br>
+          <li><strong>IOTBLUE, Backend Software Engineer (Intern)</strong><br>
             Cairo, Egypt | 08/2023 - 10/2023<br>
             Developed fire alarm system dashboards using low-code platforms. Built Attendance/Vacation System using Golang, Gorm, gin, PostgreSQL, and tested APIs with Postman.</li>
-            <li><strong>Digital Blocks, Software Test Engineer (Intern)</strong><br>
+          <li><strong>Digital Blocks, Software Test Engineer (Intern)</strong><br>
             Cairo, Egypt | 08/2022 - 09/2022<br>
             Wrote test cases and bug reports.</li>
-          </ul>
-        </div>
+        </ul>
       </div>
     </div>
-    <a href="Mamdouh_Hazem_cv.pdf" class="download-cv hover-sound" download>Download CV</a>
-  </section>
+  </div>
+  <a href="Mamdouh_Hazem_cv.pdf" class="download-cv hover-sound" download>Download CV</a>
+</section>
 
 <section id="contact" class="contact-section">
   <h3 style="font-family: 'Samurai Blast', sans-serif;">Contact Me</h3>
   <p>If you'd like to get in touch, feel free to reach out using the form below.</p>
-
   <form action="mailto:mamdouhhazemm@gmail.com" method="POST" enctype="text/plain" class="contact-form">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
@@ -121,26 +132,24 @@
   </form>
 </section>
 
-  <footer>
-    <p>Created by Mamdouh Hazem © 2025</p>
-    <div class="social-icons">
-      <a href="https://github.com/mamdouhhz"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/mamdouh-hazem-18269826b/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/mamdouhazem_/"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="first.js"></script>
-  
-  <div class="cursor"></div>
-  <script>
-    const cursor = document.querySelector('.cursor');
+<footer>
+  <p>Created by Mamdouh Hazem © 2025</p>
+  <div class="social-icons">
+    <a href="https://github.com/mamdouhhz"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mamdouh-hazem-18269826b/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/mamdouhazem_/"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="first.js"></script>
 
-    // Update cursor position on mouse move
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    });
-  </script>
+<div class="cursor"></div>
+<script>
+  const cursor = document.querySelector('.cursor');
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+</script>
 </body>
 </html>
